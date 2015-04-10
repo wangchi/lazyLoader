@@ -6,11 +6,17 @@
 * MIT
 */
 
-var lazyLoad = (function () {
+(function ( factory ) {
+    if ( typeof define === 'function' && define.amd ) {
+        define(factory);
+    } else {
+        window.lazyLoad = factory();
+    }
+})(function () {
 
     var screenHeight = $(window).height();
     var scrollHeight = 0;
-    var body = $('body');
+    var body = typeof window.chrome != 'undefined' ? $('body') : $('html');
 
     /**
      * 传入图片元素，执行加载
@@ -51,4 +57,4 @@ var lazyLoad = (function () {
       doLoad: doLoad
     };
 
-})();
+});
