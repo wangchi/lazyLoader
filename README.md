@@ -5,9 +5,8 @@
 浏览器支持情况：
 
 | Firefox | Chrome | Safari | IE | Android | iPhone |
-| ---- | -- | -- | -- | -- | -- | -- |
+|--------|-------|-------|-------|--------|-------|
 | latest | latest | latest | IE7,8,9,10,11 | UC,WeChat | UC,WeChat |
-
 
 ## 使用方法：
 
