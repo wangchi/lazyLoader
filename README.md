@@ -1,6 +1,13 @@
-# lazyLoad
+# Lazyloader
 
-图片延迟加载插件，依赖于jQuery或Zepto
+图片延迟加载器，支持pc端移动端，依赖于jQuery或Zepto，或者是与jQuery同API的js库，如[Yond](https://github.com/wangchi/Yond)
+
+浏览器支持情况：
+
+| Firefox | Chrome | Safari | IE | Android | iPhone |
+| ---- | -- | -- | -- | -- | -- | -- |
+| latest | latest | latest | IE7,8,9,10,11 | UC,WeChat | UC,WeChat |
+
 
 ## 使用方法：
 
@@ -10,23 +17,23 @@
 <script src="{yourURL}/zepto.min.js"></script>
 ```
 
-引入lazyload.js，(lazyload.js在dist目录中)
+引入lazyloader.js，(lazyloader.js在dist目录中，包括压缩版本lazyloader.min.js)
 
 ```
-<script src="{yourURL}/lazyload.js"></script>
+<script src="{yourURL}/lazyloader.min.js"></script>
 ```
 
 在img标签中调整属性：src设置为占位图路径，data-src属性放置图片真实路径，如下：
 
 ```
-<img class="pic lazyLoad" data-src="images/001.jpg" src="images/loading.jpg" alt="This is a Picture">
+<img class="pic lazy" data-src="images/001.jpg" src="images/loading.jpg" alt="This is a Picture">
 ```
 
 在页面中执行函数
 
 ```
-new lazyLoad({
-    el: $('img.lazyLoad')
+new Lazyloader({
+    el: $('img.lazy')
 });
 ```
 
@@ -50,10 +57,12 @@ html:
 
 js:
 ```
-new lazyLoad({
-    src: 'data-src',
-    el: $('#list .lazy'),
-    offset: 100
+$(function () {
+    new Lazyloader({
+        src: 'data-src',
+        el: $('#list .lazy'),
+        offset: 100
+    });
 });
 ```
 
@@ -77,6 +86,9 @@ node server
 ```
 
 默认端口号为3000，可通过[http://127.0.0.1:3000](http://127.0.0.1:3000)访问
+
+
+[History](History.md)
 
 
 MIT

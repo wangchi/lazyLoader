@@ -1,7 +1,7 @@
 {
     "name": "lazyLoad",
     "description": "lazy load plugin, base on jQuery or Zepto",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": "WalkerBe <hiwangchi@gmail.com>",
     "license": "MIT",
     "repository": "https://github.com/wangchi/lazyLoad",

@@ -3,7 +3,7 @@ module.exports = function ( grunt ) {
         pkg: grunt.file.readJSON('package.json'),
 
         jshint: {
-            files: ['app/js/lazyLoad.js'],
+            files: ['app/js/lazyloader.js'],
             options: {
                 globals: {
                     console: true
@@ -16,15 +16,15 @@ module.exports = function ( grunt ) {
                 banner: '/*! <%= pkg.name %> - <%= pkg.version %> - Email: hiwangchi@gmail.com - https://github.com/wangchi/lazyLoad */'
             },
             js: {
-                src: 'app/js/lazyload.js',
-                dest: 'app/js/lazyload.min.js'
+                src: 'app/js/lazyloader.js',
+                dest: 'app/js/lazyloader.min.js'
             }
         },
 
         copy: {
             lazyLoadjs: {
                 expand: true,
-                src: ['app/js/lazyload.js', 'app/js/lazyload.min.js'],
+                src: ['app/js/lazyloader.js', 'app/js/lazyloader.min.js'],
                 dest: 'dist/',
                 flatten: 'true'
             }
@@ -32,7 +32,7 @@ module.exports = function ( grunt ) {
 
         watch: {
             scripts: {
-                files: ['app/js/lazyload.js'],
+                files: ['app/js/lazyloader.js'],
                 tasks: 'default'
             }
         }

@@ -1,6 +1,6 @@
 /**
-* lazyLoad v0.1.0
-* 图片延迟加载插件(配合jQuery或Zepto使用)
+* Lazyloader v0.1.1
+* 图片延迟加载器(配合jQuery或Zepto使用)
 *
 * @WalkerBe http://www.walkerbe.com/
 * MIT
@@ -10,7 +10,7 @@
     if ( typeof define === 'function' && define.amd ) {
         define(factory);
     } else {
-        window.lazyLoad = factory();
+        window.Lazyloader = factory();
     }
 })(function () {
 
@@ -18,17 +18,17 @@
     var scrollTop = 0;
     var body = navigator.userAgent.match(/(chrome|safari|iPhone|iPod|Android|ios|iPad)/i) ? $('body') : $('html');
 
-    function lazyLoad ( opts ) {
+    function Lazyloader ( opts ) {
         this.opts = merge({
             src: 'data-src',
-            el: $('img.lazyLoad'),
+            el: $('img.lazy'),
             offset: 0
         }, opts || {});
 
         this.init();
     }
 
-    lazyLoad.prototype = {
+    Lazyloader.prototype = {
         init: function () {
             var _el = this.opts.el;
             for ( var i = 0, len = _el.length; i < len; i++) {
@@ -41,7 +41,8 @@
         canLoad: function ( el ) {
             scrollTop = body.scrollTop();
 
-            if ( scrollTop + screenHeight + this.opts.offset > el.offset().top ) {
+            // if ( scrollTop + screenHeight + this.opts.offset > el.offset().top ) {
+            if ( scrollTop + screenHeight + this.opts.offset > el.offset().top && el.offset().top + el.height() > scrollTop ) {
                 return true;
             }
 
@@ -87,6 +88,6 @@
     }
 
 
-    return lazyLoad;
+    return Lazyloader;
 
 });

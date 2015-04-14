@@ -1,3 +1,7 @@
+# 0.1.1 2015-04-11
+
++ fix bug: now only load images when the image is in view, when you scroll up or down , it will load other images out of the view
+
 # 0.1.0 2015-04-10
 
 + add lazyLoad server to preview the effect, base on express 4.x
