@@ -70,7 +70,9 @@
         scrollLoad: function ( el ) {
             var _this = this;
             $(window).scroll(function () {
-                _this.loadImage( el );
+                setTimeout(function () {
+                    _this.loadImage( el );
+                }, 500);
             });
         }
 

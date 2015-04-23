@@ -1,3 +1,7 @@
+# 0.1.2 2015-04-23
+
++ 优化：防止频繁的触发滚动事件
+
 # 0.1.1 2015-04-11
 
 + fix bug: now only load images when the image is in view, when you scroll up or down , it will load other images out of the view

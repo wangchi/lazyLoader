@@ -1,6 +1,6 @@
 /**
 * Lazyloader v0.1.1
-* 图片延迟加载插件(配合jQuery或Zepto使用)
+* 图片延迟加载器(配合jQuery或Zepto使用)
 *
 * @WalkerBe http://www.walkerbe.com/
 * MIT
@@ -70,7 +70,9 @@
         scrollLoad: function ( el ) {
             var _this = this;
             $(window).scroll(function () {
-                _this.loadImage( el );
+                setTimeout(function () {
+                    _this.loadImage( el );
+                }, 500);
             });
         }
 
