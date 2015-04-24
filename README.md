@@ -8,7 +8,7 @@
 |--------|-------|-------|-------|--------|-------|
 | latest | latest | latest | IE7,8,9,10,11 | UC,WeChat | UC,WeChat |
 
- ** [Demo](http://wangchi.github.io/works/lazyloader/) **
+**[在线演示](http://wangchi.github.io/works/lazyloader/)**
 
 ## 使用方法：
 
