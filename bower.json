@@ -1,9 +1,0 @@
-{
-    "name": "lazyLoad",
-    "version": "0.1.0",
-    "dependencies": {},
-    "devDependencies": {
-        "jquery": "~1.11.1",
-        "zepto": "~1.1.6"
-    }
-}
