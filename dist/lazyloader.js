@@ -1,11 +1,9 @@
 /**
-* Lazyloader v0.1.1
-* 图片延迟加载器(配合jQuery或Zepto使用)
-*
-* @WalkerBe http://www.walkerbe.com/
-* MIT
+* Lazyloader v0.1.3 图片延迟加载器(配合jQuery或Zepto使用)
+* https://github.com/wangchi/lazyLoader
+* Copyright (c) WalkerBe http://www.walkerbe.com/
+* MIT License.
 */
-
 (function ( factory ) {
     if ( typeof define === 'function' && define.amd ) {
         define(factory);

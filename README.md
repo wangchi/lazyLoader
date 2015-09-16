@@ -1,6 +1,6 @@
 # Lazyloader
 
-图片延迟加载器，支持pc端移动端，依赖于jQuery或Zepto，或者是与jQuery同API的js库，如[Yond](https://github.com/wangchi/Yond)
+图片延迟加载器，支持pc端移动端，依赖于jQuery或Zepto，或者是与jQuery同API的js库.
 
 浏览器支持情况：
 
@@ -8,7 +8,7 @@
 |--------|-------|-------|-------|--------|-------|
 | latest | latest | latest | IE7,8,9,10,11 | UC,WeChat | UC,WeChat |
 
-**[在线演示](http://wangchi.github.io/works/lazyloader/)**
+**[在线演示](http://wangchi.github.io/lazyloader/demo/)**
 
 ## 使用方法：
 
