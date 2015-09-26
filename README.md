@@ -1,5 +1,7 @@
 # Lazyloader
 
+[![Join the chat at https://gitter.im/wangchi/lazyLoader](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wangchi/lazyLoader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 图片懒加载器，支持pc端移动端，依赖于jQuery或Zepto.
 
 浏览器支持情况：
