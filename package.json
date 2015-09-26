@@ -1,11 +1,11 @@
 {
-    "name": "lazyLoad",
+    "name": "lazyLoader",
     "description": "lazy load plugin, base on jQuery or Zepto",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "author": "WalkerBe <hiwangchi@gmail.com>",
     "license": "MIT",
-    "repository": "https://github.com/wangchi/lazyLoad",
-    "homepage": "http://www.walkerbe.com/",
+    "repository": "https://github.com/wangchi/lazyLoader",
+    "homepage": "http://wangchi.github.io/lazyLoader/",
     "dependencies": {},
     "devDependencies": {
         "express": "~4.12.0",

@@ -1,6 +1,13 @@
+# 0.1.4 2015-09-26
+
++ rename: the new name is lazyLoader
+
++ update readme
+
 # 0.1.3 2015-09-16
 
 + optimize：modified some text
+
 + add gh-pages branch to preview Lazyloader online
 
 # 0.1.2 2015-04-23
